@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabla Compositions Editor</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body{margin:5%; height:250vh;}
+    textarea{height:20vh;}
+  </style>
+</head>
+<body class="text-center">
+  <h1>Tabla Compositions Editor</h1>
+  <div class="container container-fluid shadow-lg p-3 rounded">
+  <label for="title" class=""><h2>Composition Title:</h2></label>
+  <br>
+  <input type="text" class="form-control bg-transparent text-center shadow-sm" placeholder="Composition Title" id="title" required>
+  <br>
+  <label for="text" class=""><h2>Composition Body:</h2></label>
+  <textarea class="form-control bg-transparent text-center shadow-sm" placeholder="Composition Body" id="text" required></textarea>
+  <br>
+  <div id="btns" class="container container-fluid bg-light rounded p-3 shadow-lg"></div>
+  <br>
+  <button class="btn btn-primary shadow-sm" onclick="newComposition()">Save Composition</button>
+  <br><br>
+  <div id="div" class="container container-fluid"></div>
+  </div>
+  <footer>
+    <div class="fixed-bottom bg-primary p-2">&copy; 2025 Arjun Dawande. All Rights Reserved.</div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    let count = parseInt(localStorage.getItem('count')) || 1;
+    const div = document.getElementById('div');
+    //loop for retriving previously saved compositions from localStorage
+    document.addEventListener('DOMContentLoaded', ()=>{
+      for(let n = 1; n<count; n++){
+        const compDiv = document.createElement('div');
+        const br = document.createElement('br');
+        const hr = document.createElement('hr');
+        const pTitle = document.createElement('p');
+        const pText = document.createElement('p');
+        compDiv.className = 'container container-fluid shadow-sm rounded border border-5';
+        pTitle.className = 'container container-fluid';
+        pTitle.innerHTML = 'Composition Name: ' + localStorage.getItem('Title'+n);
+        pText.className = 'container container-fluid';
+        pText.innerHTML = 'Composition: ' + localStorage.getItem('Text'+n);
+        compDiv.appendChild(pTitle);
+        compDiv.appendChild(hr);
+        compDiv.appendChild(pText);
+        compDiv.appendChild(br);
+        div.appendChild(compDiv);
+        div.appendChild(br);
+      }
+    });
+    //Variables
+    const title = document.getElementById('title');
+    const text = document.getElementById('text');
+    const btns = document.getElementById('btns');
+    //Array for buttons
+    const btnLabel = [ 'धा', 'धि',  'धिं',  'धे', 'न',  'ना',  'न्',  'त',  'ता',  'ति',  'तिं',  'तित्',  'तत्', 'ग', 'गे', 'क', 'कि', 'के', 'ट', 'दिं', 'र', 'रा', 'घे', 'घें', 'थुं', 'ऽ', '|', 'SPACE', '⌫' ];
+    //Button constructor
+    btnLabel.forEach((label,index)=>{
+      let btn = document.createElement('button');
+      btn.innerHTML = label;
+      btn.className = 'btn btn-secondary border'
+      btns.appendChild(btn);
+      //Add functionality to each button
+      //backspace button
+      if(index === btnLabel.length-2){
+        btn.style.width = '80%';
+      }
+      if(index === btnLabel.length-1){
+        btn.addEventListener('click',()=>{
+          text.value = text.value.slice(0,-1);
+        });
+      }
+      btn.addEventListener('click',()=>{
+        if(btn.textContent == 'SPACE'){
+          text.value += ' ';
+        }
+        else if(!(btn.textContent == '⌫')){
+          text.value += btn.textContent;
+        }
+      });
+    });
+    // New Composition Function
+    const newComposition = ()=>{
+      let error = false;
+      if(title.value == ''){
+        alert('Please fill all the input fields.');
+        error = true;
+        return;
+      }
+      else if(error == false){
+        //Save Composition to localStorage
+        localStorage.setItem('Title'+count,title.value);
+        localStorage.setItem('Text'+count,text.value);
+        
+        //get saved note from localStorage
+        let localTitle = localStorage.getItem('Title'+count);
+        let localText = localStorage.getItem('Text'+count);
+        
+        const compDiv = document.createElement('div');
+        const br = document.createElement('br');
+        const hr = document.createElement('hr');
+        const pTitle = document.createElement('p');
+        const pText = document.createElement('p');
+        compDiv.className = 'container container-fluid shadow-sm rounded border border-5';
+        pTitle.className = 'container container-fluid';
+        pTitle.innerHTML = 'Composition Name: ' + localTitle;
+        pText.className = 'container container-fluid';
+        pText.innerHTML = 'Composition: ' + localText;
+        compDiv.appendChild(pTitle);
+        compDiv.appendChild(hr);
+        compDiv.appendChild(pText);
+        compDiv.appendChild(br);
+        div.appendChild(compDiv);
+        div.appendChild(br);
+        title.value = '';
+        text.value = '';
+        
+        //increment count for next composition
+        count++;
+        //saving count to localStorage to retrive on page reload
+        localStorage.setItem('count',count);
+      }
+    }
+  </script>
+</body>
+</html>
