@@ -52,13 +52,16 @@
           //create html elements for displaying the composition
           const compDiv = document.createElement('div');
           const delBtn = document.createElement('button');
-          const br = document.createElement('br');
-          const hr = document.createElement('hr');
+          const br1 = document.createElement('br');
+          const br2 = document.createElement('br');
+          const hr1 = document.createElement('hr');
+          const hr2 = document.createElement('hr');
           const pTitle = document.createElement('p');
           const pText = document.createElement('p');
           compDiv.className = 'container container-fluid shadow-sm rounded border border-5';
           pTitle.className = 'container container-fluid';
-          pTitle.innerHTML = 'Composition Name: ' + localStorage.getItem('Title'+n);
+          pTitle.innerHTML 
+            = 'Composition Name: ' + localStorage.getItem('Title'+n);
           pText.className = 'container container-fluid';
           pText.innerHTML = 'Composition: ' + localStorage.getItem('Text'+n);
           delBtn.className = 'p bg-danger rounded border-0';
@@ -70,13 +73,13 @@
           });
           //appending the elements
           compDiv.appendChild(pTitle);
-          compDiv.appendChild(hr);
+          compDiv.appendChild(hr1);
           compDiv.appendChild(pText);
-          compDiv.appendChild(hr);
+          compDiv.appendChild(hr2);
           compDiv.appendChild(delBtn);
-          compDiv.appendChild(br);
+          compDiv.appendChild(br1);
           div.appendChild(compDiv);
-          div.appendChild(br);
+          div.appendChild(br2);
         }
       }
     });
