@@ -73,7 +73,7 @@
           delBtn.addEventListener('click', ()=>{
             localStorage.removeItem('Title'+n);
             localStorage.removeItem('Text'+n);
-            location.reload();
+            alert('This composition will be deleted the next time you open this web app.');
           });
           //appending the elements
           compDiv.appendChild(pTitle);
@@ -115,7 +115,6 @@
         }
         CustomInputDiv.style.display = 'none';
         CustomInput.value = '';
-        location.reload();
       });
       CustomInputCancel.addEventListener('click', ()=>{
         CustomInputDiv.style.display = 'none';
@@ -176,15 +175,44 @@
         //Save Composition to localStorage
         localStorage.setItem('Title'+count,title.value);
         localStorage.setItem('Text'+count,text.value);
+        const currentCount = count;
+
+        //create html elements for displaying the composition
+         const compDiv = document.createElement('div');
+         const delBtn = document.createElement('button');
+         const br1 = document.createElement('br');
+         const br2 = document.createElement('br');
+         const hr1 = document.createElement('hr');
+         const hr2 = document.createElement('hr');
+         const pTitle = document.createElement('p');
+         const pText = document.createElement('p');
+         compDiv.className = 'container container-fluid shadow-sm rounded border border-5';
+         pTitle.className = 'container container-fluid';
+         pTitle.innerHTML = 'Composition Name: ' + localStorage.getItem('Title'+currentCount);
+         pText.className = 'container container-fluid';
+         pText.innerHTML = 'Composition: ' + localStorage.getItem('Text'+currentCount);
+         delBtn.className = 'p bg-danger rounded border-0';
+         delBtn.textContent = 'Delete';
+         delBtn.addEventListener('click', ()=>{
+           localStorage.removeItem('Title'+currentCount);
+           localStorage.removeItem('Text'+currentCount);
+           alert('This composition will be deleted the next time you open this web app.');
+         });
+         //appending the elements
+         compDiv.appendChild(pTitle);
+         compDiv.appendChild(hr1);
+         compDiv.appendChild(pText);
+         compDiv.appendChild(hr2);
+         compDiv.appendChild(delBtn);
+         compDiv.appendChild(br1);
+         div.appendChild(compDiv);
+         div.appendChild(br2);
 
         //increment count for next composition
         count++;
         
         //saving count to localStorage to retrive on page reload
         localStorage.setItem('count',count);
-
-        //Reload the page to add new composition
-        location.reload();
       }
     }
   </script>
