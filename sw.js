@@ -1,4 +1,4 @@
-const CACHE_NAME = "tabla-editor-cache-v1";
+const CACHE_NAME = "tabla-editor-cache-v7";
 
 const ASSETS = [
   "/", 
