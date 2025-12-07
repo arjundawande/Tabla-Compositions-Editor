@@ -175,7 +175,8 @@
         //Save Composition to localStorage
         localStorage.setItem('Title'+count,title.value);
         localStorage.setItem('Text'+count,text.value);
-        
+
+        const currentCount = count;
         //create html elements for displaying the composition
          const compDiv = document.createElement('div');
          const delBtn = document.createElement('button');
@@ -193,8 +194,8 @@
          delBtn.className = 'p bg-danger rounded border-0';
          delBtn.textContent = 'Delete';
          delBtn.addEventListener('click', ()=>{
-           localStorage.removeItem('Title'+count);
-           localStorage.removeItem('Text'+count);
+           localStorage.removeItem('Title'+currentCount);
+           localStorage.removeItem('Text'+currentCount);
            alert('The composition will be deleted after reload.');
          });
          //appending the elements
