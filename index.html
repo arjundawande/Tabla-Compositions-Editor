@@ -73,7 +73,7 @@
           delBtn.addEventListener('click', ()=>{
             localStorage.removeItem('Title'+n);
             localStorage.removeItem('Text'+n);
-            alert('The composition will be deleted after reload.');
+            alert('The composition will be deleted the next time you open this web app.');
           });
           //appending the elements
           compDiv.appendChild(pTitle);
@@ -176,12 +176,6 @@
         localStorage.setItem('Title'+count,title.value);
         localStorage.setItem('Text'+count,text.value);
         
-        //increment count for next composition
-        count++;
-        
-        //saving count to localStorage to retrive on page reload
-        localStorage.setItem('count',count);
-        
         //create html elements for displaying the composition
          const compDiv = document.createElement('div');
          const delBtn = document.createElement('button');
@@ -212,6 +206,12 @@
          compDiv.appendChild(br1);
          div.appendChild(compDiv);
          div.appendChild(br2);
+
+        //increment count for next composition
+        count++;
+        
+        //saving count to localStorage to retrive on page reload
+        localStorage.setItem('count',count);
       }
     }
   </script>
