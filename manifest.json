@@ -1,6 +1,6 @@
 {
   "name": "Tabla Compositions Editor",
-  "short_name": "Tabla Editor",
+  "short_name": "Tabla Compositions Editor",
   "description": "A web app for creating and editing Tabla compositions.",
   "start_url": ".",
   "scope": ".",
