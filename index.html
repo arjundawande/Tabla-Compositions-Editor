@@ -67,7 +67,7 @@
           pTitle.innerHTML 
             = 'Composition Name: ' + localStorage.getItem('Title'+n);
           pText.className = 'container container-fluid';
-          pText.innerHTML = 'Composition: ' + localStorage.getItem('Text'+n);
+          pText.innerHTML = 'Composition:<br>' + localStorage.getItem('Text'+n);
           delBtn.className = 'p bg-danger rounded border-0';
           delBtn.textContent = 'Delete';
           delBtn.addEventListener('click', ()=>{
@@ -236,7 +236,7 @@
          pTitle.className = 'container container-fluid';
          pTitle.innerHTML = 'Composition Name: ' + localStorage.getItem('Title'+currentCount);
          pText.className = 'container container-fluid';
-         pText.innerHTML = 'Composition: ' + localStorage.getItem('Text'+currentCount);
+         pText.innerHTML = 'Composition:<br>' + localStorage.getItem('Text'+currentCount);
          delBtn.className = 'p bg-danger rounded border-0';
          delBtn.textContent = 'Delete';
          delBtn.addEventListener('click', ()=>{
