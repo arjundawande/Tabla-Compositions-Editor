@@ -31,7 +31,7 @@
     <br><br>
     <input type="text" placeholder="Enter Text for New Button" id="CustomInput" class="form-control bg-transparent text-center">
     <br>
-    <p class="alert alert-secondary text-muted">Please double check before saving as once created, a button cannot be deleted.</p>
+    <p class="alert alert-secondary text-muted">To Delete a Custom Button, just Long Press it for ONE second.</p>
     <br>
     <button id="CustomInputCancel" class="btn btn-danger">Cancel</button>
     <button id="CustomInputSave" class="btn btn-success">Add Button</button>
@@ -107,6 +107,29 @@
           CustomBtn.addEventListener('click', ()=>{
             text.value += CustomBtn.textContent;
           });
+          //Add delete functionality to custom buttons
+          let timer;
+      CustomBtn.addEventListener('mousedown', ()=>{
+        timer = setTimeout(()=>{
+          localStorage.removeItem('Custom'+(btnCount-1));
+          CustomBtn.remove();
+        },1000);
+      });
+      CustomBtn.addEventListener('mouseup',()=>{
+        clearTimeout(timer);
+      });
+      CustomBtn.addEventListener('touchstart', ()=>{
+        timer = setTimeout(()=>{
+          localStorage.removeItem('Custom'+(btnCount-1));
+          CustomBtn.remove();
+        },1000);
+      });
+      CustomBtn.addEventListener('touchend',()=>{
+        clearTimeout(timer);
+      });
+      if(!(CustomBtn.innerHTML == '')){
+        btns.appendChild(CustomBtn);
+      }
           //Saving btnCount to localStorage for displaying correct button on page reload
           localStorage.setItem('Custom'+btnCount,CustomInput.value);
           btnCount++;
@@ -133,7 +156,29 @@
       CustomBtn.addEventListener('click', ()=>{
         text.value += CustomBtn.textContent;
       });
-      btns.appendChild(CustomBtn);
+      //Add delete functionality to custom buttons
+      let timer;
+      CustomBtn.addEventListener('mousedown', ()=>{
+        timer = setTimeout(()=>{
+          localStorage.removeItem('Custom'+n);
+          CustomBtn.remove();
+        },1000);
+      });
+      CustomBtn.addEventListener('mouseup',()=>{
+        clearTimeout(timer);
+      });
+      CustomBtn.addEventListener('touchstart', ()=>{
+        timer = setTimeout(()=>{
+          localStorage.removeItem('Custom'+n);
+          CustomBtn.remove();
+        },1000);
+      });
+      CustomBtn.addEventListener('touchend',()=>{
+        clearTimeout(timer);
+      });
+      if(!(CustomBtn.innerHTML == '')){
+        btns.appendChild(CustomBtn);
+      }
     }
     //Array for buttons
     const btnLabel = [ 'धा', 'धि',  'धिं',  'धे', 'न',  'ना',  'न्',  'त',  'ता',  'ति',  'तिं',  'तित्',  'तत्', 'ग', 'गे', 'क', 'कि', 'के', 'ट', 'दिं', 'र', 'रा', 'घे', 'घें', 'थुं', 'ऽ', '|', 'SPACE', '⌫' ];
@@ -217,6 +262,7 @@
       }
     }
   </script>
+  <!--Service Worker Registration-->
   <script>
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker
