@@ -73,7 +73,7 @@
           delBtn.addEventListener('click', ()=>{
             localStorage.removeItem('Title'+n);
             localStorage.removeItem('Text'+n);
-            alert('This composition will be deleted the next time you open this web app.');
+            compDiv.remove();
           });
           //appending the elements
           compDiv.appendChild(pTitle);
@@ -112,10 +112,10 @@
           btnCount++;
           localStorage.setItem('btnCount',btnCount);
           btns.appendChild(CustomBtn);
+          alert('Please restart/reload the web app if you have added multiple new buttons.');
         }
         CustomInputDiv.style.display = 'none';
         CustomInput.value = '';
-        alert('Please restart/reload the web app if you have added multiple new buttons.');
       });
       CustomInputCancel.addEventListener('click', ()=>{
         CustomInputDiv.style.display = 'none';
@@ -197,7 +197,7 @@
          delBtn.addEventListener('click', ()=>{
            localStorage.removeItem('Title'+currentCount);
            localStorage.removeItem('Text'+currentCount);
-           alert('This composition will be deleted the next time you open this web app.');
+           compDiv.remove();
          });
          //appending the elements
          compDiv.appendChild(pTitle);
