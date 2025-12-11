@@ -111,8 +111,10 @@
           let timer;
       CustomBtn.addEventListener('mousedown', ()=>{
         timer = setTimeout(()=>{
-          localStorage.removeItem('Custom'+(btnCount-1));
-          CustomBtn.remove();
+          if(confirm('Do you want to Delete this Button?')){
+             CustomBtn.remove();
+             localStorage.removeItem('Custom'+(btnCount-1));
+          }
         },1000);
       });
       CustomBtn.addEventListener('mouseup',()=>{
@@ -120,8 +122,10 @@
       });
       CustomBtn.addEventListener('touchstart', ()=>{
         timer = setTimeout(()=>{
-          localStorage.removeItem('Custom'+(btnCount-1));
-          CustomBtn.remove();
+          if(confirm('Do you want to Delete this Button?')){
+             CustomBtn.remove();
+             localStorage.removeItem('Custom'+(btnCount-1));
+          }
         },1000);
       });
       CustomBtn.addEventListener('touchend',()=>{
@@ -160,8 +164,10 @@
       let timer;
       CustomBtn.addEventListener('mousedown', ()=>{
         timer = setTimeout(()=>{
-          localStorage.removeItem('Custom'+n);
-          CustomBtn.remove();
+          if(confirm('Do you want to Delete this Button?')){
+            CustomBtn.remove();
+            localStorage.removeItem('Custom'+(btnCount-1));
+          }
         },1000);
       });
       CustomBtn.addEventListener('mouseup',()=>{
@@ -169,8 +175,10 @@
       });
       CustomBtn.addEventListener('touchstart', ()=>{
         timer = setTimeout(()=>{
-          localStorage.removeItem('Custom'+n);
-          CustomBtn.remove();
+          if(confirm('Do you want to Delete this Button?')){
+            CustomBtn.remove();
+            localStorage.removeItem('Custom'+(btnCount-1));
+          }
         },1000);
       });
       CustomBtn.addEventListener('touchend',()=>{
