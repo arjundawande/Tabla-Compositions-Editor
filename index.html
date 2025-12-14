@@ -111,7 +111,7 @@
           let timer;
       CustomBtn.addEventListener('mousedown', ()=>{
         timer = setTimeout(()=>{
-          if(confirm('Do you want to Delete this Button?')){
+          if(confirm(`Do you want to Delete '${CustomBtn.textContent}' Button?`)){
              CustomBtn.remove();
              localStorage.removeItem('Custom'+(btnCount-1));
           }
@@ -122,7 +122,7 @@
       });
       CustomBtn.addEventListener('touchstart', ()=>{
         timer = setTimeout(()=>{
-          if(confirm('Do you want to Delete this Button?')){
+          if(confirm(`Do you want to Delete '${CustomBtn.textContent}' Button?`)){
              CustomBtn.remove();
              localStorage.removeItem('Custom'+(btnCount-1));
           }
@@ -164,7 +164,7 @@
       let timer;
       CustomBtn.addEventListener('mousedown', ()=>{
         timer = setTimeout(()=>{
-          if(confirm('Do you want to Delete this Button?')){
+          if(confirm(`Do you want to Delete '${CustomBtn.textContent}' Button?`)){
             CustomBtn.remove();
             localStorage.removeItem('Custom'+(btnCount-1));
           }
@@ -175,7 +175,7 @@
       });
       CustomBtn.addEventListener('touchstart', ()=>{
         timer = setTimeout(()=>{
-          if(confirm('Do you want to Delete this Button?')){
+          if(confirm(`Do you want to Delete '${CustomBtn.textContent}' Button?`)){
             CustomBtn.remove();
             localStorage.removeItem('Custom'+(btnCount-1));
           }
