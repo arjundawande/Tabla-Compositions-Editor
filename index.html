@@ -265,7 +265,6 @@
          pText.innerHTML = 'Composition:<br>' + localStorage.getItem('Text'+currentCount);
          delBtn.className = 'p bg-danger rounded border-0';
          delBtn.textContent = 'Delete';
-         let currentCount = count;
          delBtn.addEventListener('click', ()=>{
            if(confirm(`Do you want to Delete the composition '${localStorage.getItem('Title'+currentCount)}'?`)){
               localStorage.removeItem('Title'+currentCount);
