@@ -61,13 +61,13 @@
           const hr1 = document.createElement('hr');
           const hr2 = document.createElement('hr');
           const pTitle = document.createElement('p');
-          const pText = document.createElement('p');
+          const preText = document.createElement('pre');
           compDiv.className = 'container container-fluid shadow-sm rounded border border-5';
           pTitle.className = 'container container-fluid';
           pTitle.innerHTML 
             = 'Composition Name: ' + localStorage.getItem('Title'+n);
-          pText.className = 'container container-fluid';
-          pText.innerHTML = 'Composition:<br>' + localStorage.getItem('Text'+n);
+          preText.className = 'container container-fluid';
+          preText.innerHTML = 'Composition:<br>' + localStorage.getItem('Text'+n);
           delBtn.className = 'p bg-danger rounded border-0';
           delBtn.textContent = 'Delete';
           delBtn.addEventListener('click', ()=>{
@@ -80,7 +80,7 @@
           //appending the elements
           compDiv.appendChild(pTitle);
           compDiv.appendChild(hr1);
-          compDiv.appendChild(pText);
+          compDiv.appendChild(preText);
           compDiv.appendChild(hr2);
           compDiv.appendChild(delBtn);
           compDiv.appendChild(br1);
@@ -257,12 +257,12 @@
          const hr1 = document.createElement('hr');
          const hr2 = document.createElement('hr');
          const pTitle = document.createElement('p');
-         const pText = document.createElement('p');
+         const preText = document.createElement('pre');
          compDiv.className = 'container container-fluid shadow-sm rounded border border-5';
          pTitle.className = 'container container-fluid';
          pTitle.innerHTML = 'Composition Name: ' + localStorage.getItem('Title'+currentCount);
-         pText.className = 'container container-fluid';
-         pText.innerHTML = 'Composition:<br>' + localStorage.getItem('Text'+currentCount);
+         preText.className = 'container container-fluid';
+         preText.innerHTML = 'Composition:<br>' + localStorage.getItem('Text'+currentCount);
          delBtn.className = 'p bg-danger rounded border-0';
          delBtn.textContent = 'Delete';
          delBtn.addEventListener('click', ()=>{
@@ -275,7 +275,7 @@
          //appending the elements
          compDiv.appendChild(pTitle);
          compDiv.appendChild(hr1);
-         compDiv.appendChild(pText);
+         compDiv.appendChild(preText);
          compDiv.appendChild(hr2);
          compDiv.appendChild(delBtn);
          compDiv.appendChild(br1);
