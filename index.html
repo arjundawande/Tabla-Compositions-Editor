@@ -205,6 +205,22 @@
         btn.addEventListener('click',()=>{
           text.value = text.value.slice(0,-1);
         });
+        btn.addEventListener('touchstart',()=>{
+          backInterval = setInterval(()=>{
+              text.value = text.value.slice(0,-1);
+            },100);
+        });
+        btn.addEventListener('touchend',()=>{
+          clearInterval(backInterval);
+        });
+        btn.addEventListener('mousedown',()=>{
+          backInterval = setInterval(()=>{
+              text.value = text.value.slice(0,-1);
+            },100);
+        });
+        btn.addEventListener('mouseup',()=>{
+          clearInterval(backInterval);
+        });
       }
       //SPACE Button
       btn.addEventListener('click',()=>{
