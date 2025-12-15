@@ -71,9 +71,11 @@
           delBtn.className = 'p bg-danger rounded border-0';
           delBtn.textContent = 'Delete';
           delBtn.addEventListener('click', ()=>{
-            localStorage.removeItem('Title'+n);
-            localStorage.removeItem('Text'+n);
-            compDiv.remove();
+            if(confirm(`Do you want to Delete the composition '${localStorage.getItem('Title'+n)}'?`)){
+              localStorage.removeItem('Title'+n);
+              localStorage.removeItem('Text'+n);
+              compDiv.remove();
+            }
           });
           //appending the elements
           compDiv.appendChild(pTitle);
@@ -263,10 +265,13 @@
          pText.innerHTML = 'Composition:<br>' + localStorage.getItem('Text'+currentCount);
          delBtn.className = 'p bg-danger rounded border-0';
          delBtn.textContent = 'Delete';
+         let currentCount = count;
          delBtn.addEventListener('click', ()=>{
-           localStorage.removeItem('Title'+currentCount);
-           localStorage.removeItem('Text'+currentCount);
-           compDiv.remove();
+           if(confirm(`Do you want to Delete the composition '${localStorage.getItem('Title'+currentCount)}'?`)){
+              localStorage.removeItem('Title'+currentCount);
+              localStorage.removeItem('Text'+currentCount);
+              compDiv.remove();
+           }
          });
          //appending the elements
          compDiv.appendChild(pTitle);
