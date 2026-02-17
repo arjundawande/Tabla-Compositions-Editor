@@ -1,1 +1,1 @@
-&copy; 2025 Arjun Dawande. All Rights Reserved.
+&copy; 2025-2026 Arjun Dawande. All Rights Reserved.
