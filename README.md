@@ -26,7 +26,7 @@ Many tabla disciples face frustration when trying to compose on digital devices 
 2. Start composing using the available buttons
 3. Create custom buttons for phrases you use frequently
 4. Save your compositions locally on your device
-5. Access offline anytime after first visit
+5. Access offline in the PWA anytime after first visit
 
 ## 🛠 Technologies Used
 
@@ -43,9 +43,8 @@ Many tabla disciples face frustration when trying to compose on digital devices 
 
 - **Edit Functionality** - Currently in development to allow editing of your compositions
 
-## 📝 License
-
-This project is open source. Please see LICENSE file for details.
+## Suggestions
+- Feel free to contact me at [a.dawande@protonmail.com] for any suggestions.
 
 ---
 
