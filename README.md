@@ -44,7 +44,7 @@ Many tabla disciples face frustration when trying to compose on digital devices 
 - **Edit Functionality** - Currently in development to allow editing of your compositions
 
 ## Suggestions
-- Feel free to contact me at a.dawande@protonmail.com for any suggestions.
+- Feel free to contact me at a.dawande+TablaCompositionsEditor@protonmail.com for any suggestions.
 
 ---
 
