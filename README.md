@@ -57,8 +57,8 @@ This project is a Progressive Web App (PWA) styled with Bootstrap.
 - **Deployment**: Hosted on GitHub Pages, assets served via jsDelivr CDN (https://www.jsdelivr.com/).
 
 ## Licence
-This project is licensed under the MIT Licence.
-see the `LICENCE` file for full project Licence.
+This project is licensed under the MIT License.
+see the `LICENSE` file for full project License.
 
 ---
 
