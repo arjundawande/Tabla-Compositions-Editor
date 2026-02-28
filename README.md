@@ -6,7 +6,7 @@ A simple web-based editor designed for tabla musicians to quickly write composit
 
 Many tabla disciples face frustration when trying to compose on digital devices because:
 - Devanagari keyboards are often unavailable
-- Switching keyboard layouts is time-consuming and cumbersome
+- Switching keyboard layouts is time-consuming.
 - Traditional methods don't support quick, efficient composition
 
 **Tabla Compositions Editor** solves this by providing an intuitive interface with basic tabla notation buttons, allowing musicians to focus on their compositions rather than technical hurdles.
