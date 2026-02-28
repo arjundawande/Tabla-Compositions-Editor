@@ -30,8 +30,8 @@ Many tabla disciples face frustration when trying to compose on digital devices 
 
 ## 🛠 Technologies Used
 
-- **JavaScript** (82.1%) - Core functionality
-- **HTML** (17.9%) - Structure and layout
+- **JavaScript** - Core functionality
+- **HTML** - Structure and layout
 
 ## 📋 How to Use Custom Buttons
 
