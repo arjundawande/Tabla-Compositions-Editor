@@ -46,10 +46,14 @@ Many tabla disciples face frustration when trying to compose on digital devices 
 ## Suggestions
 - Feel free to contact me at a.dawande+TablaCompositionsEditor@protonmail.com for any suggestions.
 
-## Additional Credits
-- This project is a PWA styled with Bootstrap 5.3.8
-- **Framework**: Bootstrap 5 (MIT License)
-- **Deployment**: Hosted on GitHub Pages via jsDelivr CDN.
+## Credits & Attributions
+
+This project is a Progressive Web App (PWA) styled with Bootstrap.
+
+- **Bootstrap 5.3.8** (MIT License): https://getbootstrap.com/docs/5.3/getting-started/license/
+- **Deployment**: Hosted on GitHub Pages, assets served via jsDelivr CDN (https://www.jsdelivr.com/).
+
+See `LICENSE` for full project license.
 
 ---
 
