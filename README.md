@@ -18,7 +18,9 @@ Many tabla disciples face frustration when trying to compose on digital devices 
 - **Custom Buttons** - Create your own custom buttons with commonly used phrases to increase typing speed and efficiency
 - **Easy Deletion** - Long-press any custom button for 1 second to delete it
 - **Quick Composition** - Write tabla compositions faster without worrying about keyboard layouts
-- **Save Compositions** - Store your work in this digital age
+- **Save Compositions** - Store your work in this digital age. 
+**Note:** These compositions and the custom buttons are stored on your device using LocalStorage, so no one **except you** can have access to these and are completely private and safe.
+**Make sure you don't accidentally delete the site data as it will lead to deletion of all your compositions.**
 
 ## 🚀 Getting Started
 
