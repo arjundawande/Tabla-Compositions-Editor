@@ -1,3 +1,4 @@
+//Copyright (c) 2025-2026 Arjun Dawande. This project is licensed under the MIT License.
 let count = parseInt(localStorage.getItem('count')) || 1;
 let btnCount = parseInt(localStorage.getItem('btnCount')) || 1;
 const div = document.getElementById('div');
@@ -259,4 +260,5 @@ const newComposition = ()=>{
     title.value = '';
     text.value = '';
   }
+
 }
