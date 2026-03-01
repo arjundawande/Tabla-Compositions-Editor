@@ -46,7 +46,7 @@ Many tabla disciples face frustration when trying to compose on digital devices 
 
 - **Edit Functionality** - Currently in development to allow editing of your compositions
 
-## Suggestions
+## 📩 Suggestions
 - Feel free to contact me for any suggestions. [![Email Tabla Compositions Editor](https://img.shields.io/badge/Email-Tabla_Compositions_Editor-blue?logo=mail)](mailto:a.dawande%2BTablaCompositionsEditor@protonmail.com?subject=Tabla%20Compositions%20Editor)
 
 ## Credits & Attributions
