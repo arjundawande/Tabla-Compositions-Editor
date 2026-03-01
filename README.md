@@ -61,7 +61,7 @@ This project is licensed under the MIT License.
 see the `LICENSE` file for full project License.
 
 ## 🎵 Cultural Note
-Tabla bols (Dha, Dhin, Ta, Na, etc.) on the buttons on the keyboard on this website are traditional elements of Hindustani classical music, freely shared in the public domain across gharanas. Button designs inspired by this living oral tradition—no ownership is claimed by me.
+Tabla bols (Dha, Dhin, Ta, Na, etc.) on the buttons on the keyboard on this website are traditional elements of Hindustani Classical Music, freely shared in the public domain. Button designs inspired by this living oral tradition—no ownership is claimed by me.
 
 ---
 
