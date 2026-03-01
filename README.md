@@ -49,14 +49,14 @@ Many tabla disciples face frustration when trying to compose on digital devices 
 ## 📩 Suggestions
 - Feel free to contact me for any suggestions. [![Email Tabla Compositions Editor](https://img.shields.io/badge/Email-Tabla_Compositions_Editor-blue?logo=mail)](mailto:a.dawande%2BTablaCompositionsEditor@protonmail.com?subject=Tabla%20Compositions%20Editor)
 
-## Credits & Attributions
+## ✨ Credits & Attributions
 
 This project is a Progressive Web App (PWA) styled with Bootstrap.
 
 - **Bootstrap 5.3.8** (MIT License): https://getbootstrap.com/docs/5.3/getting-started/license/
 - **Deployment**: Hosted on GitHub Pages, assets served via jsDelivr CDN (https://www.jsdelivr.com/).
 
-## Licence
+## 🪪 Licence
 This project is licensed under the MIT License.
 see the `LICENSE` file for full project License.
 
