@@ -60,6 +60,9 @@ This project is a Progressive Web App (PWA) styled with Bootstrap.
 This project is licensed under the MIT License.
 see the `LICENSE` file for full project License.
 
+## 🎵 Cultural Note
+Tabla bols (Dha, Dhin, Ta, Na, etc.) are traditional elements of Hindustani classical music, freely shared in the public domain across gharanas. Button designs inspired by this living oral tradition—no ownership claimed by me.
+
 ---
 
 **Note:** Contributions are not currently open. Feel free to use and enjoy the editor!
