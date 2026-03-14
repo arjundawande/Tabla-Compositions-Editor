@@ -67,4 +67,4 @@ Tabla bols (Dha, Dhin, Ta, Na, etc.) on the buttons on the keyboard on this webs
 
 ---
 
-**Note:** I made this Editor in my free time and will update this as required and if I have the time to do it. There is **not** a specific or structured period over which I will update this Editor as it is a project done only in my free time. Contributions are not currently open. Feel free to use and enjoy the editor!
+**Note:** I made this Editor in my free time and will update this as required and if I have the time to do it. There is **not** a specific or structured period over which I will update this Editor as it is a project done only in my free time. Contributions are currently **not** open. Feel free to use and enjoy the editor!
