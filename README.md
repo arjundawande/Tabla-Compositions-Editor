@@ -44,7 +44,7 @@ Many tabla disciples face frustration when trying to compose on digital devices 
 
 ## 🔄 Upcoming Features
 
-- **Edit Functionality** - Currently in development to allow editing of your compositions. Even though you can click on any saved composition and it will be displayed on the input fields so you can edit it and save it as a new composition. Note that the old (original) composition will not be deleted and the new one will be added as a completely different composition.
+- **Edit Functionality** - Currently in development to allow editing of your compositions. Till then you can click on any saved composition and it will be displayed on the input fields so you can edit it and save it as a new composition. Note that the old (original) composition will not be deleted and the new one will be added as a completely different composition.
 
 - **Symbols** - Symbols for the Sam (सम), Khali (खाली), and other symbols are currently not available in the Editor but I may add them later on to help make the compositions more informative from the point of view of the Taals used.
 
