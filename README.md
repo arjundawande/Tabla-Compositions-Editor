@@ -46,6 +46,8 @@ Many tabla disciples face frustration when trying to compose on digital devices 
 
 - **Edit Functionality** - Currently in development to allow editing of your compositions
 
+- **Symbols** - Symbols for the Sam (सम), Khali (खाली), and other symbols are currently not available in the Editor but I may add them later on to help make the compositions more informative from the point of view of the Taals used.
+
 ## 📩 Suggestions
 - Feel free to contact me for any suggestions. [![Email Tabla Compositions Editor](https://img.shields.io/badge/Email-Tabla_Compositions_Editor-blue?logo=mail)](mailto:a.dawande%2BTablaCompositionsEditor@protonmail.com?subject=Tabla%20Compositions%20Editor)
 
@@ -65,4 +67,4 @@ Tabla bols (Dha, Dhin, Ta, Na, etc.) on the buttons on the keyboard on this webs
 
 ---
 
-**Note:** Contributions are not currently open. Feel free to use and enjoy the editor!
+**Note:** I made this Editor in my free time and will update this as required and if I have the time to do it. There is **not** a specific or structured period over which I will update this Editor as it is a project done only in my free time. Contributions are not currently open. Feel free to use and enjoy the editor!
