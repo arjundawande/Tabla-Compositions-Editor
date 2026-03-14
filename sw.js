@@ -1,5 +1,5 @@
 //Updated on 14th March 2026
-const CACHE_NAME = "tabla-editor-cache-v15.2";
+const CACHE_NAME = "tabla-editor-cache-v15.21";
 
 const ASSETS = [
   "/", 
