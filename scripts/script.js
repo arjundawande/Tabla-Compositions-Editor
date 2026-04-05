@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
             const pText = document.createElement('pre');
             compDiv.className = 'container container-fluid shadow-sm rounded border border-5';
             pTitle.className = 'container container-fluid';
-            pTitle.innerHTML = `<b>${localStorage.getItem('Title'+n)}</b>`;
+            pTitle.innerHTML = '<b>' + localStorage.getItem('Title'+n) + '</b>';
             pText.className = 'container container-fluid';
             pText.innerHTML = localStorage.getItem('Text'+n);
             delBtn.className = 'p bg-danger rounded border-0';
@@ -225,7 +225,7 @@ const newComposition = ()=>{
      const pText = document.createElement('pre');
      compDiv.className = 'container container-fluid shadow-sm rounded border border-5';
      pTitle.className = 'container container-fluid';
-     pTitle.innerHTML = `<b>${localStorage.getItem('Title'+currentCount)}</b>`;
+     pTitle.innerHTML = '<b>' + localStorage.getItem('Title'+currentCount) + '</b>';
      pText.className = 'container container-fluid';
      pText.innerHTML = localStorage.getItem('Text'+currentCount);
      delBtn.className = 'p bg-danger rounded border-0';
