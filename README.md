@@ -46,8 +46,8 @@ Many tabla disciples face frustration when trying to compose on digital devices 
 
 - **Symbols** - Symbols for the Sam (सम), Khali (खाली), and other symbols are currently not available in the Editor but I may add them later on to help make the compositions more informative from the point of view of the Taals used.
 
-## 📩 Suggestions
-- Feel free to contact me for any suggestions. [![Email Tabla Compositions Editor](https://img.shields.io/badge/Email-Tabla_Compositions_Editor-blue?logo=mail)](mailto:a.dawande%2BTablaCompositionsEditor@protonmail.com?subject=Tabla%20Compositions%20Editor)
+## 📩 Suggestions and Questions
+- Feel free to contact me for any suggestions or questions regarding this project. [![Email Tabla Compositions Editor](https://img.shields.io/badge/Email-Tabla_Compositions_Editor-blue?logo=mail)](mailto:a.dawande%2BTablaCompositionsEditor@protonmail.com?subject=Tabla%20Compositions%20Editor)
 
 ## ✨ Credits & Attributions
 
