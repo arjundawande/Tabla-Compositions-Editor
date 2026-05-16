@@ -30,8 +30,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
                 }
             });
             compDiv.addEventListener('click',()=>{
-                title.value = pTitle.textContent.slice(17);
-                text.value = pText.textContent.slice(12);
+                title.value = pTitle.textContent;
+                text.value = pText.textContent;
             });
             //appending the elements
             compDiv.appendChild(pTitle);
@@ -238,8 +238,8 @@ const newComposition = ()=>{
        }
      });
      compDiv.addEventListener('click',()=>{
-        title.value = pTitle.textContent.slice(17);
-        text.value = pText.textContent.slice(12);
+        title.value = pTitle.textContent;
+        text.value = pText.textContent;
      });
      //appending the elements
      compDiv.appendChild(pTitle);
