@@ -32,7 +32,7 @@ Many tabla disciples face frustration when trying to compose on digital devices 
 
 - **JavaScript** - Core functionality
 - **HTML** - Structure and layout
-- **Bootstrap 5**(via CDN) - For styling
+- **Bootstrap 5** (via CDN) - For styling
 
 ## 📋 How to Use Custom Buttons
 
